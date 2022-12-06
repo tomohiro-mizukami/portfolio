@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Tomohiro Mizukami | Portfolio</title>
+        <meta name="description" content="フリーランスWebディベロッパー 水上智紘 のポートフォリオサイト">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.min.css">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&family=Oswald:wght@600&display=swap" rel="stylesheet">
+
+        <!-- Swiper -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+
+        <link rel="stylesheet" href="/dist/style.css">
+    </head>
+
+<body>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">T</a>
+        </div>
+    </header>
+
+    <!-- 🍔 menu -->
+    <div class="openbtn"><span></span><span></span><span></span></div>
+    <nav id="g-nav" class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#hero">Top</a></li>
+            <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="#work">Work</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="circle-bg"></div>
+
+
+    <main class="container">
+
+        <!--Hero-->
+        <section class="hero area" id="hero">
+            <h2 class="hero__name uppercase">Tomohiro Mizukami</h2>
+            <p class="hero__title uppercase">Freelance Web Developer</p>
+        </section>
+
+        <!--About-->
+        <section class="about area" id="about">
+            <div class="about__body">
+
+                <img src="images/profile.png" alt="水上智紘の顔写真" class="about__img">
+
+                <p class="about__desc"><span class="dib">こんにちは、</span><span class="dib">水上</span>&nbsp;<span class="dib">智紘</span><span class="dib">です。</span><span class="dib">福岡県を</span><span class="dib">拠点に、</span><span class="dib">フリーランスで</span></span><span class="dib">Webサイトを</span><span class="dib">作って</span><span class="dib">います。</span><span class="dib">インドの</span><span class="dib">シリコンバレーに</span><span class="dib">IT留学して、</span><span class="dib">全身を</span><span class="dib">虫に</span><span class="dib">刺されて</span><span class="dib">きました。</span><span class="dib">デザイン</span><span class="dib">から</span><span class="dib">WordPress</span><span class="dib">化まで</span><span class="dib">丸ごと</span><span class="dib">おまかせ</span><span class="dib">ください。</span></p>
+            </div>
+        </section>
+
+        <!--Work-->
+        <div class="work area" id="work">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <a href="https://portfolio.waterup.dev/sobolon" class="swiper-slide">
+                        <picture class="swiper-slide__picture">
+                            <source srcset="images/carousel/sobolon-pc.png"
+                                    media="(min-width: 480px)">
+                            <img src="images/carousel/sobolon.png" alt="ショップサイトのスクリーンショット" />
+                        </picture>
+                        <section class="swiper-slide__body">
+                            <h3 class="swiper-slide__title">ショップサイト</h3>
+                            <p class="swiper-slide__desc"><span class="dib">[デイトラ]</span>&nbsp;<span class="dib">Web</span><span class="dib">サイト</span><span class="dib">制作</span><span class="dib">中級</span><span class="dib">編の</span><span class="dib">課題。</span><span class="dib">Adobe</span> <span class="dib">XDの</span><span class="dib">デザイン</span><span class="dib">カンプ</span><span class="dib">から</span><span class="dib">コーディング</span><span class="dib">しま</span><span class="dib">した。</span></p>
+                        </section>
+                    </a>
+                    <a href="https://portfolio.waterup.dev/fictional-university" class="swiper-slide">
+                        <picture class="swiper-slide__picture">
+                            <source srcset="images/carousel/fictional-university-pc.png"
+                                    media="(min-width: 480px)">
+                            <img src="images/carousel/fictional-university.png" alt="架空の大学サイトのスクリーンショット" />
+                        </picture>
+                        <section class="swiper-slide__body">
+                            <h3 class="swiper-slide__title">架空の大学サイト</h3>
+                            <p class="swiper-slide__desc"><span class="dib">[Udemy]</span>&nbsp;<span class="dib">静的</span><span class="dib">サイトを</span><span class="dib">WordPress</span><span class="dib">化</span><span class="dib">して</span><span class="dib">ます。</span><span class="dib">カスタム</span><span class="dib">フィールド</span><span class="dib">や</span><span class="dib">関連</span><span class="dib">ページを</span><span class="dib">作成後、</span><span class="dib">ライブ</span><span class="dib">サーチを</span><span class="dib">実装中。</span</p>
+                        </section>
+                    </a>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!--Contact-->
+        <div class="contact area" id="contact">
+            <iframe name="hidden_iframe" id="hidden_iframe" class="hidden-iframe"></iframe>
+            <form id="form" class="form" action="https://docs.google.com/forms/d/e/1FAIpQLSc82Yw4Q4IRdaQtjYVUtXYvaRdQDL_3cUfJL9Cq5JJ6VqCQzQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                <div class="form-fields">
+                    <div class="form-field">
+                        <input type="text" id="name" placeholder="満艦飾 マコ" name="entry.2005620554">
+                        <span id="name-indicator" class="indicator">&#10003;</span>
+                    </div>
+
+                    <div class="form-field">
+                        <input type="email" id="email" placeholder="example@gmail.com" name="entry.1045781291">
+                        <span id="email-indicator" class="indicator">&#10003;</span>
+                    </div>
+
+                    <div class="form-field">
+                        <textarea id="textarea" placeholder="メッセージ..." name="entry.839337160"></textarea>
+                        <span id="textarea-indicator" class="indicator">&#10003;</span>
+                    </div>
+                </div>
+                <button type="submit" id="submit" class="submit-btn" disabled>&#8593;&nbsp;ご入力待ち...</button>
+            </form>
+        </div>
+
+    </main>
+
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="/app/js/script.js"></script>
+
+</body>
+
+</html>
