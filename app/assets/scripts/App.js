@@ -1,3 +1,5 @@
+import '../styles/styles.css'
+
 /* 🍔 Menu */
 class Nav {
   constructor() {
