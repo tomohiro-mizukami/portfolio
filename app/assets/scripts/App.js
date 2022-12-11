@@ -1,4 +1,10 @@
-import '../styles/styles.css'
+// core version + pagination, autoplay modules:
+import Swiper, { Pagination, Autoplay } from 'swiper';
+// import Swiper and modules styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+import '../styles/styles.css';
 
 /* 🍔 Menu */
 class Nav {
@@ -42,16 +48,19 @@ class Nav {
 
 /* Swiper */
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
-    spaceBetween: 30,
-      loop: true,
-      autoplay: {
-          delay: 5000,
-      },
+  // configure Swiper to use modules
+  modules: [Pagination, Autoplay],
 
-      // If we need pagination
-      pagination: {
-          el: '.swiper-pagination',
+  // Optional parameters
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
   },
 });
 

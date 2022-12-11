@@ -17,6 +17,7 @@
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {
-    "destyle.css": "^4.0.0"
+    "destyle.css": "^4.0.0",
+    "swiper": "^8.4.5"
   }
 }
