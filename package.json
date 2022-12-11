@@ -8,11 +8,15 @@
   "devDependencies": {
     "autoprefixer": "^10.2.4",
     "css-loader": "^5.0.1",
+    "postcss-import": "^14.0.0",
     "postcss-loader": "^5.0.0",
     "postcss-nested": "^5.0.3",
     "postcss-simple-vars": "^6.0.3",
     "style-loader": "^2.0.0",
     "webpack": "^5.20.1",
     "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "destyle.css": "^4.0.0"
   }
 }
