@@ -20,14 +20,6 @@
   height: 100vh;
 }
 
-.dib {
-  display: inline-block;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
 .logo {
   position: fixed;
   top: 2vh;
@@ -226,33 +218,6 @@
   overflow: hidden;
 }
 
-.hero {
-  padding: 0 1.25rem;
-  text-align: center;
-}
-
-.hero__name {
-  font-family: "Oswald", sans-serif;
-  font-size: 2.8125rem;
-  line-height: 1.2;
-  letter-spacing: 0.15em;
-  margin-bottom: 0.9375rem;
-}
-
-.hero__title {
-  font-size: 0.8125rem;
-  letter-spacing: 0.25em;
-}
-
-@media (min-width: 37.5em) {
-  .hero__name {
-    font-size: clamp(2.8125rem, 7vw, 5rem);
-    margin-bottom: 1.25rem;
-  }
-  .hero__title {
-    font-size: 1.25rem;
-  }
-}
 .about__body {
   margin: 0 auto;
 }

@@ -1,0 +1,27 @@
+.hero {
+  padding: 0 1.25rem;
+  text-align: center;
+
+  &__name {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.8125rem;
+    line-height: 1.2;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.9375rem;
+
+    @media (min-width: 37.5em) {
+      font-size: clamp(2.8125rem, 7vw, 5rem);
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  &__role {
+    font-size: 0.8125rem;
+    letter-spacing: 0.25em;
+
+    @media (min-width: 37.5em) {
+      font-size: 1.25rem;
+    }
+  }
+  
+}

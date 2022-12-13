@@ -38,3 +38,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.dib {
+  display: inline-block;
+}
