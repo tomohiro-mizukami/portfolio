@@ -1,0 +1,20 @@
+.btn {
+  display: inline-block;
+  min-width: 11.25rem;
+  padding: .875rem 1.5rem;
+  font-size: 1rem;
+  letter-spacing: .1em;
+  text-align: center;
+  color: var(--text-btn);
+  background-color: var(--bg-btn);
+  border: 2px solid var(--bg-btn);
+  cursor: pointer;
+  transition: all .3s ease-out;
+
+  &:disabled {
+    color: #ccc;
+    background-color: transparent;
+    border: 2px solid #ccc;
+    cursor: not-allowed;
+  }
+}

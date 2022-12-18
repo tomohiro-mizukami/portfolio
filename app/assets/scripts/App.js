@@ -6,6 +6,10 @@ import 'swiper/css/pagination';
 
 import '../styles/styles.css';
 
+if (module.hot) {
+  module.hot.accept()
+}
+
 /* 🍔 Menu */
 class Nav {
   constructor() {
@@ -71,7 +75,7 @@ const iframe = document.getElementById("hidden_iframe")
 
 iframe.onload = () => {
   if(submitted) {
-    window.location='thankyou.html'
+    window.location='thanks.html'
   }
 }
 

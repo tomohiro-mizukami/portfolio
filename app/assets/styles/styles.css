@@ -1,6 +1,9 @@
 @import 'destyle.css';
 @import 'base/_global';
+@import 'base/_variables';
 @import 'modules/_hero';
+@import 'modules/_btn';
+@import 'modules/_contact-form';
 
 
 .container {
@@ -386,30 +389,6 @@
   background-color: var(--bg-textarea);
 }
 
-.submit-btn {
-  display: block;
-  width: 11.25rem;
-  margin: 0 auto;
-  padding: 14px 0;
-  font-size: 1rem;
-  letter-spacing: 0.1em;
-  text-align: center;
-  color: var(--text-btn);
-  background-color: var(--bg-btn);
-  border: 2px solid var(--bg-btn);
-  cursor: pointer;
-  transition: color 0.3s, background-color 0.3s;
-}
-.submit-btn:hover:not(:disabled) {
-  opacity: 0.8;
-}
-.submit-btn:disabled {
-  color: #ccc;
-  background-color: transparent;
-  border: 2px solid #ccc;
-  cursor: not-allowed;
-}
-
 @media (min-width: 36em) {
   .form-field {
     margin-bottom: 1.875rem;
@@ -442,6 +421,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   width: 20rem;
   height: 100vh;
   margin: 0 auto;
@@ -462,23 +442,4 @@
   line-height: 1.5em;
   letter-spacing: 0.3em;
   margin-bottom: 2.5rem;
-}
-
-.thankyou__btn {
-  display: block;
-  width: 14.375rem;
-  margin: 0 auto;
-  padding: 14px 0;
-  font-size: 1rem;
-  letter-spacing: 0.1em;
-  text-align: center;
-  color: var(--text-btn);
-  background-color: var(--bg-btn);
-  border: 2px solid var(--bg-btn);
-  cursor: pointer;
-  transition: color 0.3s, background-color 0.3s;
-  margin: 0;
-}
-.thankyou__btn:hover:not(:disabled) {
-  opacity: 0.8;
 }
