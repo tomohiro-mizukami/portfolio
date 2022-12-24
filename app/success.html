@@ -3,23 +3,56 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Thank you :)</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank you :)</title>
+  <meta name="description" content="お問い合わせありがとうございます。">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&family=Oswald:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@4.0.0/destyle.min.css">
+  <style>
+    .thankyou {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 20rem;
+      height: 100vh;
+      margin: 0 auto;
+      padding-left: 1.25rem;
+    }
+
+    .thankyou__title {
+      font-family: "Oswald", sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 44px;
+      letter-spacing: 0.15em;
+      margin-bottom: 0.9375rem;
+      text-transform: uppercase;
+    }
+
+    .btn {
+      display: inline-block;
+      min-width: 11.25rem;
+      padding: .875rem 1.5rem;
+      font-size: 1rem;
+      letter-spacing: .1em;
+      text-align: center;
+      color: var(--text-btn);
+      background-color: var(--bg-btn);
+      border: 2px solid var(--bg-btn);
+      cursor: pointer;
+      transition: all .3s ease-out;
+    }
+  </style>
 </head>
 
 <body>
   <section class="thankyou">
-    <h1 class="thankyou__title uppercase">Thank you :)</h1>
+    <h1 class="thankyou__title">Thank you :)</h1>
     <p class="thankyou__text">1〜2営業日以内に<br>返信させていただきます。</p>
-    <a href="index.html" class="btn">ポートフォリオに戻る</a>
+    <a href="../index.html" class="btn">ポートフォリオに戻る</a>
   </section>
 
 </body>
