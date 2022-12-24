@@ -46,7 +46,7 @@ let config = {
 }
 
 if (currentTask == 'dev') {
-  cssConfig.use.unshift('style.loader')
+  cssConfig.use.unshift('style-loader')
   config.output = {
     filename: 'bundled.js',
     path: path.resolve(__dirname, 'app')
@@ -74,7 +74,7 @@ if (currentTask == 'build') {
       }
     }
   })
-  
+
   cssConfig.use.unshift(MiniCssExtractPlugin.loader)
   config.output = {
     filename: '[name].[chunkhash].js',
