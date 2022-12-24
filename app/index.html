@@ -108,22 +108,25 @@
 		<!--Contact-->
 		<div class="contact area" id="contact">
 			<iframe name="hidden_iframe" id="hidden_iframe" class="hidden-iframe"></iframe>
-			<form id="form" class="form"
-				action="https://docs.google.com/forms/d/e/1FAIpQLSc82Yw4Q4IRdaQtjYVUtXYvaRdQDL_3cUfJL9Cq5JJ6VqCQzQ/formResponse"
-				method="post" target="hidden_iframe" onsubmit="submitted=true;">
+			<form
+				class="form" name="contact" method="POST" data-netlify="true" onSubmit="submit"
+				data-netlify-honeypot="bot-field" action="/success/"
+			>
+				<input class="d-none" name="bot-field">
+
 				<div class="form-fields">
 					<div class="form-field">
-						<input type="text" id="name" placeholder="満艦飾 マコ" name="entry.2005620554">
+						<input type="text" id="name" placeholder="満艦飾 マコ" name="name">
 						<span id="name-indicator" class="indicator">&#10003;</span>
 					</div>
 
 					<div class="form-field">
-						<input type="email" id="email" placeholder="example@gmail.com" name="entry.1045781291">
+						<input type="email" id="email" placeholder="example@gmail.com" name="email">
 						<span id="email-indicator" class="indicator">&#10003;</span>
 					</div>
 
 					<div class="form-field">
-						<textarea id="textarea" placeholder="メッセージ..." name="entry.839337160"></textarea>
+						<textarea id="textarea" placeholder="メッセージ..." name="message"></textarea>
 						<span id="textarea-indicator" class="indicator">&#10003;</span>
 					</div>
 				</div>

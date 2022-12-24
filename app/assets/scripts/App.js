@@ -69,17 +69,6 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-/* Google Forms iframe */
-let submitted = false
-const iframe = document.getElementById("hidden_iframe")
-
-iframe.onload = () => {
-  if(submitted) {
-    window.location='thanks.html'
-  }
-}
-
-
 class Form {
   // 1. describe and create/initiate our object
   constructor() {
