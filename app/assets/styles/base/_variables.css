@@ -10,7 +10,7 @@
   --bg-btn: #000;
 }
 
-@media (prefers-color-scheme: dark) {
+@mixin darkMode {
   :root {
     --text: #ddd;
     --bg: #000;

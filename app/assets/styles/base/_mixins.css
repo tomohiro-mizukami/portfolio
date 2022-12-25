@@ -33,3 +33,9 @@
     @mixin-content;
   }
 }
+
+@define-mixin darkMode {
+  @media (prefers-color-scheme: dark) {
+    @mixin-content;
+  }
+}

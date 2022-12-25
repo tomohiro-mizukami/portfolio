@@ -1,5 +1,3 @@
-@use "mixins";
-
 .thankyou {
   display: flex;
   flex-direction: column;

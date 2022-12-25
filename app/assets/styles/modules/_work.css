@@ -1,5 +1,3 @@
-@use "mixins";
-
 .swiper-slide__picture {
   margin: 0 auto 0.625rem;
   border: 1px solid #d2d5d9;
@@ -37,7 +35,7 @@
   background: #000;
 }
 
-@include mixins.breakpoint(xsmall) {
+@mixin atXsmall {
   // Swiper
   .swiper {
     max-width: 31.25rem;
@@ -45,7 +43,7 @@
   }
 }
 
-@include mixins.breakpoint(large) {
+@mixin atLarge {
   .swiper-slide__title {
     font-size: 1.5625rem;
   }
@@ -62,7 +60,7 @@
   }
 }
 
-@include mixins.breakpoint(xlarge) {
+@mixin atXlarge {
   .swiper-slide__picture {
     margin-bottom: 1.25rem;
 }
