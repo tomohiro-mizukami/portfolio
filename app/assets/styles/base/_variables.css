@@ -8,10 +8,8 @@
   --bg-textarea: #e0e0e0;
   --text-btn: #fff;
   --bg-btn: #000;
-}
 
-@mixin darkMode {
-  :root {
+  @mixin darkMode {
     --text: #ddd;
     --bg: #000;
     --placeholder: #bebebe;

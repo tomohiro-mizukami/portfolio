@@ -22,7 +22,6 @@ img {
 }
 
 
-// CSS Scroll Snap
 .container {
   /* スクロールスナップの設定 */
   overflow: auto;

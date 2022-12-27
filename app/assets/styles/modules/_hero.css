@@ -2,7 +2,7 @@
   padding: 0 1.25rem;
   text-align: center;
 
-  &__name {
+  &__title {
     font-family: "Oswald", sans-serif;
     font-size: 2.8125rem;
     line-height: 1.2;
@@ -15,7 +15,7 @@
     }
   }
 
-  &__role {
+  &__subtitle {
     font-size: 0.8125rem;
     letter-spacing: 0.25em;
 

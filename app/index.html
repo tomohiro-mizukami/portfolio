@@ -42,15 +42,18 @@
 
 		<!--Hero-->
 		<section class="hero area" id="hero">
-			<h1 class="hero__name uppercase">Tomohiro Mizukami</h1>
-			<h2 class="hero__role uppercase">Freelance Web Developer</h2>
+			<h1 class="hero__title uppercase">Tomohiro Mizukami</h1>
+			<h2 class="hero__subtitle uppercase">Freelance Web Developer</h2>
 		</section>
 
 		<!--About-->
 		<section class="about area" id="about">
 			<div class="about__body">
 
-				<img src="assets/images/profile.png" alt="水上智紘の顔写真" class="about__img">
+				<picture>
+					<source sizes="130px" srcset="assets/images/about-tomohiro--large.png 130w, assets/images/about-tomohiro--large-hi-dpi.png 260w" media="(min-width: 600px)">
+					<img class="about__img" sizes="100px" srcset="assets/images/about-tomohiro.png 100w, assets/images/about-tomohiro-hi-dpi.png 200w" alt="水上智紘">
+				</picture>
 
 				<p class="about__desc"><span class="dib">こんにちは、</span><span class="dib">水上</span>&nbsp;<span
 						class="dib">智紘</span><span class="dib">です。</span><span class="dib">福岡県を</span><span
@@ -72,8 +75,8 @@
 					<!-- Slides -->
 					<a href="https://portfolio.waterup.dev/sobolon" class="swiper-slide">
 						<picture class="swiper-slide__picture">
-							<source srcset="assets/images/swiper/sobolon-pc.png" media="(min-width: 480px)">
-							<img src="assets/images/swiper/sobolon.png" alt="ショップサイトのスクリーンショット" />
+							<source sizes="650px" srcset="assets/images/work-sobolon--large.png 650w, assets/images/work-sobolon--large-hi-dpi.png 1300w" media="(min-width: 480px)">
+							<img sizes="360px" srcset="assets/images/work-sobolon.png 360w, assets/images/work-sobolon-hi-dpi.png 720w" alt="ショップサイト">
 						</picture>
 						<section class="swiper-slide__body">
 							<h3 class="swiper-slide__title">ショップサイト</h3>
@@ -87,8 +90,8 @@
 					</a>
 					<a href="https://portfolio.waterup.dev/fictional-university" class="swiper-slide">
 						<picture class="swiper-slide__picture">
-							<source srcset="assets/images/swiper/fictional-university-pc.png" media="(min-width: 480px)">
-							<img src="assets/images/swiper/fictional-university.png" alt="架空の大学サイトのスクリーンショット" />
+							<source sizes="650px" srcset="assets/images/work-fictional-university--large.png 650w, assets/images/work-fictional-university--large-hi-dpi.png 1300w" media="(min-width: 480px)">
+							<img sizes="360px" srcset="assets/images/work-fictional-university.png 360w, assets/images/work-fictional-university-hi-dpi.png 720w" alt="ショップサイト">
 						</picture>
 						<section class="swiper-slide__body">
 							<h3 class="swiper-slide__title">架空の大学サイト</h3>
@@ -142,7 +145,7 @@
 		</div>
 
 	</main>
-
+	
 </body>
 
 </html>
