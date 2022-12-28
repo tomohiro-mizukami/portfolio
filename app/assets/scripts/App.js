@@ -99,27 +99,27 @@ class Form {
 
   validate() {
     if (this.emailField.value.match(this.pattern)) {
-      this.emailField.nextElementSibling.classList.add("valid")
+      this.emailField.nextElementSibling.classList.add("is-valid")
     } else {
-      this.emailField.nextElementSibling.classList.remove("valid")
+      this.emailField.nextElementSibling.classList.remove("is-valid")
     }
 
     if (this.nameField.value !== '') {
-      this.nameField.nextElementSibling.classList.add("valid")
+      this.nameField.nextElementSibling.classList.add("is-valid")
     } else {
-      this.nameField.nextElementSibling.classList.remove("valid")
+      this.nameField.nextElementSibling.classList.remove("is-valid")
     }
 
     if (this.textareaField.value !== '') {
-      this.textareaField.nextElementSibling.classList.add("valid")
+      this.textareaField.nextElementSibling.classList.add("is-valid")
     } else {
-      this.textareaField.nextElementSibling.classList.remove("valid")
+      this.textareaField.nextElementSibling.classList.remove("is-valid")
     }
 
     if(
-      this.nameIndicator.classList.contains("valid") &&
-      this.emailIndicator.classList.contains("valid") &&
-      this.textareaIndicator.classList.contains("valid")
+      this.nameIndicator.classList.contains("is-valid") &&
+      this.emailIndicator.classList.contains("is-valid") &&
+      this.textareaIndicator.classList.contains("is-valid")
       ) {
         console.log("submit")
       this.submit.removeAttribute("disabled")

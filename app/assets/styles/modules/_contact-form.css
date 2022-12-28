@@ -1,4 +1,75 @@
+
 .contact-form {
+  width: 75%;
+  margin: 0 auto;
+
+  &__content {
+    width: 100%;
+    max-width: 25rem;
+    margin: 0 auto;
+
+    @mixin atLarge {
+      max-width: 37.5rem;
+    }
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 1.25rem;
+
+    @mixin atSmall {
+      margin-bottom: 1.875rem;
+    }
+  }
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    padding: 10px 45px 10px 20px;
+    font-size: 16px;
+    color: var(--text-field);
+    resize: vertical;
+  
+    &::placeholder {
+        font-size: 0.875rem;
+        font-weight: 400;
+        letter-spacing: .2em;
+        color: var(--placeholder);
+    }
+  }
+
+  &__input {
+    height: 50px;
+
+    &--name {
+      background-color: var(--bg-name);
+    }
+    
+    &--email {
+      background-color: var(--bg-email);
+    }
+  }
+
+  &__textarea {
+    padding-top: 15px;
+    height: 150px;
+    background-color: var(--bg-textarea);
+  }
+
+  &__indicator {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    display: none;
+    font-size: 1rem;
+
+    &.is-valid {
+      display: block;
+      color: var(--text-field);
+    }
+  }
 
   &__btn-container {
     text-align: center;

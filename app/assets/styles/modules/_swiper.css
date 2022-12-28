@@ -21,10 +21,10 @@
   
     @mixin darkMode {
       opacity: .5;
-    }
-  }
 
-  &-pagination-bullet-active {
-    opacity: 1;
+      &-active {
+        opacity: 1;
+      }
+    }
   }
 }
