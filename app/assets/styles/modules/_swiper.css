@@ -16,58 +16,15 @@
     max-width: 40.625rem;
   }
 
-  &__picture {
-    margin: 0 auto 0.625rem;
-    border: 1px solid #d2d5d9;
-    overflow: hidden;
-    display: block;
-
-    @mixin atXlarge {
-      margin-bottom: 1.25rem;
-    }
-  }
+  &-pagination-bullet {
+    background: var(--swiper-bullet);
   
-  &__title {
-    font-size: 1.375rem;
-    font-weight: 700;
-    line-height: 44px;
-    letter-spacing: .3em;
-    text-align: center;
-    margin-bottom: 0.625rem;
-
-    @mixin atLarge {
-      font-size: 1.5625rem;
-    }
-
-    @mixin atXlarge {
-      font-size: 2.5rem;
+    @mixin darkMode {
+      opacity: .5;
     }
   }
-  
-  &__desc {
-    width: 83.3333%;
-    margin: 0 auto 2.8125rem;
-    font-size: 0.9375rem;
-    line-height: 25px;
-    letter-spacing: .3em;
-    text-align: center;
 
-    @mixin atLarge {
-      width: 75%;
-      font-size: 1.0625rem;
-      line-height: 23px;
-    }
-  }
-}
-
-.swiper-pagination-bullet {
-  background: var(--swiper-bullet);
-
-  @mixin darkMode {
-    opacity: .5;
-  }
-
-  &-active {
+  &-pagination-bullet-active {
     opacity: 1;
   }
 }
