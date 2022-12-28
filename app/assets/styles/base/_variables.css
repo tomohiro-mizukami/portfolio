@@ -8,6 +8,7 @@
   --bg-textarea: #e0e0e0;
   --text-btn: #fff;
   --bg-btn: #000;
+  --swiper-bullet: #000;
 
   @mixin darkMode {
     --text: #ddd;
@@ -19,5 +20,6 @@
     --bg-textarea: #222;
     --text-btn: #000;
     --bg-btn: #fff;
+    --swiper-bullet: #fff;
   }
 }

@@ -20,22 +20,3 @@ img {
 .dib {
   display: inline-block;
 }
-
-
-.container {
-  /* スクロールスナップの設定 */
-  overflow: auto;
-  scroll-snap-type: y mandatory;
-  height: 100vh;
-}
-
-.area {
-  /* テキストを画面中央に表示 */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  /* スクロールスナップの設定 */
-  scroll-snap-align: start;
-  height: 100vh;
-}

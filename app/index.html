@@ -41,18 +41,18 @@
 	<main class="container">
 
 		<!--Hero-->
-		<section class="hero area" id="hero">
+		<section id="hero" class="hero area">
 			<h1 class="hero__title uppercase">Tomohiro Mizukami</h1>
 			<h2 class="hero__subtitle uppercase">Freelance Web Developer</h2>
 		</section>
 
 		<!--About-->
-		<section class="about area" id="about">
+		<section id="about" class="about area">
 			<div class="about__body">
 
 				<picture>
 					<source sizes="130px" srcset="assets/images/about-tomohiro--large.png 130w, assets/images/about-tomohiro--large-hi-dpi.png 260w" media="(min-width: 600px)">
-					<img class="about__img" sizes="100px" srcset="assets/images/about-tomohiro.png 100w, assets/images/about-tomohiro-hi-dpi.png 200w" alt="水上智紘">
+					<img class="about__image" sizes="100px" srcset="assets/images/about-tomohiro.png 100w, assets/images/about-tomohiro-hi-dpi.png 200w" alt="水上智紘">
 				</picture>
 
 				<p class="about__desc"><span class="dib">こんにちは、</span><span class="dib">水上</span>&nbsp;<span
@@ -68,19 +68,19 @@
 		</section>
 
 		<!--Work-->
-		<div class="work area" id="work">
+		<div id="work" class="work area">
 			<div class="swiper">
 				<!-- Additional required wrapper -->
 				<div class="swiper-wrapper">
 					<!-- Slides -->
 					<a href="https://portfolio.waterup.dev/sobolon" class="swiper-slide">
-						<picture class="swiper-slide__picture">
+						<picture class="swiper__picture">
 							<source sizes="650px" srcset="assets/images/work-sobolon--large.png 650w, assets/images/work-sobolon--large-hi-dpi.png 1300w" media="(min-width: 480px)">
 							<img sizes="360px" srcset="assets/images/work-sobolon.png 360w, assets/images/work-sobolon-hi-dpi.png 720w" alt="ショップサイト">
 						</picture>
-						<section class="swiper-slide__body">
-							<h3 class="swiper-slide__title">ショップサイト</h3>
-							<p class="swiper-slide__desc"><span class="dib">[コーディング]</span>&nbsp;<span class="dib">Web</span><span
+						<section>
+							<h3 class="swiper__title">ショップサイト</h3>
+							<p class="swiper__desc"><span class="dib">[コーディング]</span>&nbsp;<span class="dib">Web</span><span
 									class="dib">サイト</span><span class="dib">制作</span><span class="dib">中級</span><span
 									class="dib">編の</span><span class="dib">課題。</span><span class="dib">Adobe</span> <span
 									class="dib">XDの</span><span class="dib">デザイン</span><span class="dib">カンプ</span><span
@@ -89,13 +89,13 @@
 						</section>
 					</a>
 					<a href="https://portfolio.waterup.dev/fictional-university" class="swiper-slide">
-						<picture class="swiper-slide__picture">
+						<picture class="swiper__picture">
 							<source sizes="650px" srcset="assets/images/work-fictional-university--large.png 650w, assets/images/work-fictional-university--large-hi-dpi.png 1300w" media="(min-width: 480px)">
 							<img sizes="360px" srcset="assets/images/work-fictional-university.png 360w, assets/images/work-fictional-university-hi-dpi.png 720w" alt="ショップサイト">
 						</picture>
-						<section class="swiper-slide__body">
-							<h3 class="swiper-slide__title">架空の大学サイト</h3>
-							<p class="swiper-slide__desc"><span class="dib">[WordPress]</span>&nbsp;<span class="dib">静的</span><span
+						<section>
+							<h3 class="swiper__title">架空の大学サイト</h3>
+							<p class="swiper__desc"><span class="dib">[WordPress]</span>&nbsp;<span class="dib">静的</span><span
 									class="dib">サイトを</span><span class="dib">WordPress</span><span class="dib">化</span><span
 									class="dib">して</span><span class="dib">ます。</span><span class="dib">カスタム</span><span
 									class="dib">フィールド</span><span class="dib">や</span><span class="dib">関連</span><span
@@ -110,8 +110,7 @@
 		</div>
 
 		<!--Contact-->
-		<div class="contact area" id="contact">
-			<iframe name="hidden_iframe" id="hidden_iframe" class="hidden-iframe"></iframe>
+		<div id="contact" class="contact area">
 			<form
 				class="form"
 				name="contact"

@@ -1,0 +1,8 @@
+.area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  scroll-snap-align: start;
+  height: 100vh;
+}
