@@ -1,0 +1,26 @@
+.success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 20rem;
+  height: 100vh;
+  margin: 0 auto;
+  padding-left: 1.25rem;
+
+  &__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: .15em;
+    margin-bottom: 0.9375rem;
+  }
+  
+  &__text {
+    font-size: 0.9375rem;
+    line-height: 1.5em;
+    letter-spacing: .3em;
+    margin-bottom: 2.5rem;
+  }
+}
