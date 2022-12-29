@@ -1,0 +1,80 @@
+.site-header {
+
+  &__logo {
+    position: fixed;
+    top: 2vh;
+    left: 2vw;
+    z-index: 998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.125rem;
+    height: 3.125rem;
+    font-size: 1.75rem;
+    
+    @mixin atSmall {
+      font-size: 2.25rem;
+    }
+    
+    @mixin atLarge {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__menu-icon {
+    position: fixed;
+    top: 2vh;
+    right: 2vw;
+    z-index: 9999;
+    /*ボタンを最前面に*/
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+  }
+  
+  /*×に変化*/
+  &__menu-icon span {
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: var(--text);
+    width: 45%;
+  }
+  
+  &__menu-icon span:nth-of-type(1) {
+    top: 15px;
+  }
+  
+  &__menu-icon span:nth-of-type(2) {
+    top: 23px;
+  }
+  
+  &__menu-icon span:nth-of-type(3) {
+    top: 31px;
+  }
+  
+  &__menu-icon.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+  }
+  
+  &__menu-icon.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  
+  &__menu-icon.active span:nth-of-type(3) {
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+  }
+  
+  .body-no-scroll {
+    overflow: hidden;
+  }
+}

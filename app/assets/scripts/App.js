@@ -13,10 +13,10 @@ if (module.hot) {
 /* 🍔 Menu */
 class Nav {
   constructor() {
-    this.openNav = document.querySelector('.openbtn')
-    this.closeNav = document.querySelectorAll('.nav__link')
+    this.openNav = document.querySelector('.site-header__menu-icon')
+    this.closeNav = document.querySelectorAll('.hamburger-menu__close')
     this.nav = document.querySelector('#g-nav')
-    this.warpEffects  = document.querySelector('.circle-bg')
+    this.warpEffects  = document.querySelector('.hamburger-menu__circle-bg')
     this.body = document.querySelector('body')
     this.events()
   }

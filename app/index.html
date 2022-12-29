@@ -19,23 +19,26 @@
 <body>
 
 	<!-- Header -->
-	<header class="header">
-		<div class="logo">
+	<header class="site-header">
+		<div class="site-header__logo">
 			<a href="index.html">T</a>
+		</div>
+
+		<div class="site-header__menu-icon">
+			<span></span><span></span><span></span>
 		</div>
 	</header>
 
 	<!-- 🍔 menu -->
-	<div class="openbtn"><span></span><span></span><span></span></div>
-	<nav id="g-nav" class="nav">
-		<ul class="nav__list">
-			<li class="nav__item"><a class="nav__link" href="#hero">Top</a></li>
-			<li class="nav__item"><a class="nav__link" href="#about">About</a></li>
-			<li class="nav__item"><a class="nav__link" href="#work">Work</a></li>
-			<li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+	<nav id="g-nav" class="hamburger-menu">
+		<ul>
+			<li><a href="#hero" class="hamburger-menu__close">Top</a></li>
+			<li><a href="#about" class="hamburger-menu__close">About</a></li>
+			<li><a href="#work" class="hamburger-menu__close">Work</a></li>
+			<li><a href="#contact" class="hamburger-menu__close">Contact</a></li>
 		</ul>
 	</nav>
-	<div class="circle-bg"></div>
+	<div class="hamburger-menu__circle-bg"></div>
 
 
 	<main class="container">
