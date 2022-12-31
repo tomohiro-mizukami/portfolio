@@ -6,48 +6,14 @@ import 'swiper/css/pagination';
 
 import '../styles/styles.css';
 
+import HamburgerMenu from './modules/HamburgerMenu';
+
+new HamburgerMenu();
+
 if (module.hot) {
   module.hot.accept()
 }
 
-/* 🍔 Menu */
-class Nav {
-  constructor() {
-    this.openNav = document.querySelector('.site-header__menu-icon')
-    this.closeNav = document.querySelectorAll('.hamburger-menu__close')
-    this.nav = document.querySelector('#g-nav')
-    this.warpEffects  = document.querySelector('.hamburger-menu__circle-bg')
-    this.body = document.querySelector('body')
-    this.events()
-  }
-
-  events() {
-    this.openNav.addEventListener('click', () => {
-      this.addActive()
-    })
-
-    this.closeNav.forEach((el) => {
-      el.addEventListener('click', () => { 
-        this.removeActive()
-      })
-    })
-  }
-
-  addActive() {
-    this.openNav.classList.toggle('active')
-    this.nav.classList.toggle('panelactive')
-    this.warpEffects.classList.toggle('circleactive')
-    this.body.classList.toggle('body-no-scroll')
-  }
-
-  removeActive() {
-    this.openNav.classList.remove('active')
-    this.nav.classList.remove('panelactive')
-    this.warpEffects.classList.remove('circleactive')
-    this.body.classList.remove('body-no-scroll')
-  }
-
-}
 
 
 /* Swiper */
@@ -131,5 +97,4 @@ class Form {
   }
 }
 
-const nav = new Nav()
 const form = new Form()

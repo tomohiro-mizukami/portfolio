@@ -1,6 +1,5 @@
 .hamburger-menu {
   display: none;
-
   @keyframes gnaviAnime {
     0% {
       opacity: 0;
@@ -11,21 +10,6 @@
     }
   }
 
-  &.panelactive {
-    display: block;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    animation-name: gnaviAnime;
-    animation-duration: 1s;
-    animation-delay: .2s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-    background-color: var(--bg);
-  }
-
   ul {
     opacity: 0;
     position: absolute;
@@ -33,18 +17,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
-  &.panelactive ul {
-    opacity: 1;
-  }
-
-  &.panelactive li {
-    animation-name: gnaviAnime;
-    animation-duration: 1s;
-    animation-delay: .2s;
-    animation-fill-mode: forwards;
-    opacity: 0;
   }
 
   a {
@@ -60,6 +32,33 @@
     @mixin atMedium {
       font-size: 2.1875rem;
     } 
+  }
+
+  &--is-visible {
+    display: block;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    animation-name: gnaviAnime;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    background-color: var(--bg);
+
+    ul {
+      opacity: 1;
+    }
+
+    li {
+      animation-name: gnaviAnime;
+      animation-duration: 1s;
+      animation-delay: .2s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+    }
   }
 
   /*丸の拡大*/
@@ -83,7 +82,7 @@
     /*ボーダーでワープみたいな演出*/
     border: 2px dashed var(--text);
 
-    &.circleactive {
+    &--is-active {
       transform: scale(50);
       /*クラスが付与されたらscaleを拡大*/
     }
