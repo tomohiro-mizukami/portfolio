@@ -6,9 +6,9 @@ import 'swiper/css/pagination';
 
 import '../styles/styles.css';
 
-import HamburgerMenu from './modules/HamburgerMenu';
+import NavMenu from './modules/NavMenu';
 
-new HamburgerMenu();
+new NavMenu();
 
 if (module.hot) {
   module.hot.accept()
