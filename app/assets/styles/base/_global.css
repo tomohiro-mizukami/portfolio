@@ -17,6 +17,10 @@ img {
   text-transform: uppercase;
 }
 
+.body-no-scroll {
+  overflow: hidden;
+}
+
 .dib {
   display: inline-block;
 }
