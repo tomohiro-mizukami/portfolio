@@ -1,0 +1,64 @@
+.nav-menu {
+  display: none;
+  @keyframes gnaviAnime {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+  ul {
+    opacity: 0;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  a {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: .2em;
+    color: var(--text);
+    text-transform: uppercase;
+    padding: 1.3rem;
+
+    @mixin atMedium {
+      font-size: 2.1875rem;
+    } 
+  }
+
+  &--is-visible {
+    display: block;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    animation-name: gnaviAnime;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    background-color: var(--bg);
+
+    ul {
+      opacity: 1;
+    }
+
+    /* Delayed to show nav-links */
+    li {
+      animation-name: gnaviAnime;
+      animation-duration: 1s;
+      animation-delay: .2s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+    }
+  }
+}

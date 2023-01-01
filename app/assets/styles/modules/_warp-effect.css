@@ -1,0 +1,26 @@
+/*丸の拡大*/
+.warp-effect {
+  position: fixed;
+  z-index: 3;
+  /*丸の形*/
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /*丸のスタート位置と形状*/
+  transform: scale(0);
+  /*scaleをはじめは0に*/
+  top: calc(50% - 50px);
+  /*50%から円の半径を引いた値*/
+  left: calc(50% - 50px);
+  /*50%から円の半径を引いた値*/
+  transition: all .6s;
+  /*0.6秒かけてアニメーション*/
+
+  /*ボーダーでワープみたいな演出*/
+  border: 2px dashed var(--text);
+
+  &--is-active {
+    transform: scale(50);
+    /*クラスが付与されたらscaleを拡大*/
+  }
+}
