@@ -7,8 +7,12 @@ import 'swiper/css/pagination';
 import '../styles/styles.css';
 
 import NavMenu from './modules/NavMenu';
+import RevealOnScroll from './modules/RevealOnScroll'
 
-new NavMenu();
+new RevealOnScroll(document.querySelectorAll(".about"), 75)
+new RevealOnScroll(document.querySelectorAll(".contact-form"), 60)
+let navMenu = new NavMenu();
+
 
 if (module.hot) {
   module.hot.accept()
