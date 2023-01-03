@@ -18,5 +18,6 @@
 @import 'modules/_about';
 @import 'modules/_work';
 @import 'modules/_swiper';
+@import 'modules/_modal';
 @import 'modules/_contact-form';
 @import 'modules/_success';

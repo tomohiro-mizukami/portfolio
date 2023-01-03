@@ -1,18 +1,32 @@
 // core version + pagination, autoplay modules:
-import Swiper, { Pagination, Autoplay } from 'swiper';
+import Swiper, { Pagination, Autoplay } from 'swiper'
 // import Swiper and modules styles
-import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/css'
+import 'swiper/css/pagination'
 
-import '../styles/styles.css';
+import '../styles/styles.css'
 
-import NavMenu from './modules/NavMenu';
+import NavMenu from './modules/NavMenu'
 import RevealOnScroll from './modules/RevealOnScroll'
 
+new NavMenu()
 new RevealOnScroll(document.querySelectorAll(".about"), 75)
 new RevealOnScroll(document.querySelectorAll(".contact-form"), 60)
-let navMenu = new NavMenu();
+let modal
 
+document.querySelectorAll(".open-modal").forEach(el => {
+  el.addEventListener("click", e => {
+    e.preventDefault()
+    if (typeof modal == "undefined") {
+      import(/* webpackChunkName: "modal" */ './modules/Modal').then(x => {
+        modal = new x.default()
+        setTimeout(() => modal.openTheModal(), 20)
+      }).catch(() => console.log("There was a problem."))
+    } else {
+      modal.openTheModal()
+    }
+  })
+})
 
 if (module.hot) {
   module.hot.accept()
