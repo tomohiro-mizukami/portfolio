@@ -5,7 +5,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 
 import '../styles/styles.css'
-
+import 'lazysizes' 
 import NavMenu from './modules/NavMenu'
 import RevealOnScroll from './modules/RevealOnScroll'
 
